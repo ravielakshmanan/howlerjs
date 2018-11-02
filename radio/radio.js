@@ -111,13 +111,8 @@ Radio.prototype = {
 // Setup our new radio and pass in the stations.
 var radio = new Radio([
   {
-    title: "Power 181 (U.S.)",
-    src: ['http://listen.livestreamingservice.com/181-power_128k.mp3', 'http://listen.livestreamingservice.com/181-power_64k.aac'],
-    howl: null
-  },
-  {
-    title: "U.K. Top 40",
-    src: ['http://listen.livestreamingservice.com/181-uktop40_128k.mp3', 'http://listen.livestreamingservice.com/181-uktop40_64k.aac'],
+    title: "BBC Asian Network",
+    src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p'],
     howl: null
   },
   {
@@ -131,18 +126,23 @@ var radio = new Radio([
     howl: null
   },
   {
-    title: "BBC Asian Network",
-    src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p'],
-    howl: null
-  },
-  {
     title: "KEXP",
     src: ['http://live-mp3-128.kexp.org/'],
     howl: null
   },
   {
+    title: "Power 181",
+    src: ['http://listen.livestreamingservice.com/181-power_128k.mp3', 'http://listen.livestreamingservice.com/181-power_64k.aac'],
+    howl: null
+  },
+  {
     title: "Radio HSL",
     src: ['http://50.7.68.251:7064/stream'],
+    howl: null
+  },
+  {
+    title: "U.K. Top 40",
+    src: ['http://listen.livestreamingservice.com/181-uktop40_128k.mp3', 'http://listen.livestreamingservice.com/181-uktop40_64k.aac'],
     howl: null
   }
 ]);
