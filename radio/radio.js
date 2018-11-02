@@ -1,17 +1,7 @@
-/*!
- *  Howler.js Radio Demo
- *  howlerjs.com
- *
- *  (c) 2013-2018, James Simpson of GoldFire Studios
- *  goldfirestudios.com
- *
- *  MIT License
- */
-
 // Cache references to DOM elements.
-var elms = ['station0', 'title0', 'live0', 'playing0', 'station1', 'title1', 'live1', 'playing1', 'station2', 'title2', 'live2', 'playing2', 'station3', 'title3', 'live3', 'playing3', 'station4', 'title4', 'live4', 'playing4'];
-elms.forEach(function(elm) {
-  window[elm] = document.getElementById(elm);
+var elts = ['station0', 'title0', 'live0', 'playing0', 'station1', 'title1', 'live1', 'playing1', 'station2', 'title2', 'live2', 'playing2', 'station3', 'title3', 'live3', 'playing3', 'station4', 'title4', 'live4', 'playing4'];
+elts.forEach(function(elt) {
+  window[elt] = document.getElementById(elt);
 });
 
 /**
@@ -27,7 +17,7 @@ var Radio = function(stations) {
   
   // Setup the display for each station.
   for (var i=0; i<self.stations.length; i++) {
-    window['title' + i].innerHTML = '<b>' + self.stations[i].freq + '</b> ' + self.stations[i].title;
+    window['title' + i].innerHTML = '<b>' + self.stations[i].title + '</b> ';
     window['station' + i].addEventListener('click', function(index) {
       var isNotPlaying = (self.stations[index].howl && !self.stations[index].howl.playing());
       
@@ -115,33 +105,28 @@ Radio.prototype = {
 // Setup our new radio and pass in the stations.
 var radio = new Radio([
   {
-    freq: '81.4',
-    title: "Groove Salad",
-    src: ['http://ice1.somafm.com/groovesalad-128-mp3', 'http://ice1.somafm.com/groovesalad-128-aac'],
+    title: "Power 181",
+    src: ['http://listen.livestreamingservice.com/181-power_128k.mp3', 'http://listen.livestreamingservice.com/181-power_64k.aac'],
     howl: null
   },
   {
-    freq: '89.9',
-    title: "Secret Agent",
-    src: ['http://ice1.somafm.com/secretagent-128-mp3', 'http://ice1.somafm.com/secretagent-128-aac'],
+    title: "UK Top 40",
+    src: ['http://listen.livestreamingservice.com/181-uktop40_128k.mp3', 'http://listen.livestreamingservice.com/181-uktop40_64k.aac'],
     howl: null
   },
   {
-    freq: '98.9',
-    title: "Indie Pop",
-    src: ['http://ice1.somafm.com/indiepop-128-mp3', 'http://ice1.somafm.com/indiepop-128-aac'],
+    title: "Radio Central 24",
+    src: ['http://176.31.107.8:8459/stream'],
     howl: null
   },
   {
-    freq: '103.3',
-    title: "Police Radio",
-    src: ['http://ice1.somafm.com/sf1033-128-mp3', 'http://ice2.somafm.com/sf1033-64-aac'],
+    title: "Radio HSL",
+    src: ['http://50.7.68.251:7064/stream'],
     howl: null
   },
   {
-    freq: '107.7',
-    title: "The Trip",
-    src: ['http://ice1.somafm.com/thetrip-128-mp3', 'http://ice2.somafm.com/thetrip-64-aac'],
+    title: "American Tamil Radio",
+    src: ['http://69.46.24.226:7188/stream'],
     howl: null
   }
 ]);
