@@ -4,7 +4,8 @@ var elts = ['station0', 'title0', 'live0', 'playing0',
             'station2', 'title2', 'live2', 'playing2', 
             'station3', 'title3', 'live3', 'playing3', 
             'station4', 'title4', 'live4', 'playing4',
-            'station5', 'title5', 'live5', 'playing5'];
+            'station5', 'title5', 'live5', 'playing5',
+            'station6', 'title6', 'live6', 'playing6'];
 elts.forEach(function(elt) {
   window[elt] = document.getElementById(elt);
 });
@@ -132,6 +133,11 @@ var radio = new Radio([
   {
     title: "BBC Asian Network",
     src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p'],
+    howl: null
+  },
+  {
+    title: "KEXP",
+    src: ['http://live-mp3-128.kexp.org/'],
     howl: null
   },
   {
