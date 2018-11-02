@@ -52,12 +52,14 @@ body {
 .station:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-div.icon {
-  background-image: url("radio.png");
+.icon {
+  content:url("radio.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  height: 100px;
-  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 3vw;
+  height: 3vw;
 }
 .title {
   font-size: 4vw;

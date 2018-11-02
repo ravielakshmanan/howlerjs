@@ -1,11 +1,11 @@
 // Cache references to DOM elements.
-var elts = ['station0', 'title0', 'live0', 'playing0', 
-            'station1', 'title1', 'live1', 'playing1', 
-            'station2', 'title2', 'live2', 'playing2', 
-            'station3', 'title3', 'live3', 'playing3', 
-            'station4', 'title4', 'live4', 'playing4',
-            'station5', 'title5', 'live5', 'playing5',
-            'station6', 'title6', 'live6', 'playing6'];
+var elts = ['station0', 'icon0', 'title0', 'live0', 'playing0', 
+            'station1', 'icon1', 'title1', 'live1', 'playing1', 
+            'station2', 'icon2', 'title2', 'live2', 'playing2', 
+            'station3', 'icon3', 'title3', 'live3', 'playing3', 
+            'station4', 'icon4', 'title4', 'live4', 'playing4',
+            'station5', 'icon5', 'title5', 'live5', 'playing5',
+            'station6', 'icon6', 'title6', 'live6', 'playing6'];
 elts.forEach(function(elt) {
   window[elt] = document.getElementById(elt);
 });
