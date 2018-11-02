@@ -3,7 +3,8 @@ var elts = ['station0', 'title0', 'live0', 'playing0',
             'station1', 'title1', 'live1', 'playing1', 
             'station2', 'title2', 'live2', 'playing2', 
             'station3', 'title3', 'live3', 'playing3', 
-            'station4', 'title4', 'live4', 'playing4'];
+            'station4', 'title4', 'live4', 'playing4',
+            'station5', 'title5', 'live5', 'playing5'];
 elts.forEach(function(elt) {
   window[elt] = document.getElementById(elt);
 });
@@ -109,28 +110,33 @@ Radio.prototype = {
 // Setup our new radio and pass in the stations.
 var radio = new Radio([
   {
-    title: "Power 181",
+    title: "Power 181 (U.S.)",
     src: ['http://listen.livestreamingservice.com/181-power_128k.mp3', 'http://listen.livestreamingservice.com/181-power_64k.aac'],
     howl: null
   },
   {
-    title: "UK Top 40",
+    title: "U.K. Top 40",
     src: ['http://listen.livestreamingservice.com/181-uktop40_128k.mp3', 'http://listen.livestreamingservice.com/181-uktop40_64k.aac'],
     howl: null
   },
   {
-    title: "Radio Central 24",
-    src: ['http://176.31.107.8:8459/stream'],
+    title: "BBC Radio 1",
+    src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p'],
+    howl: null
+  },
+  {
+    title: "BBC Radio 6",
+    src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p'],
+    howl: null
+  },
+  {
+    title: "BBC Asian Network",
+    src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_asianet_mf_p'],
     howl: null
   },
   {
     title: "Radio HSL",
     src: ['http://50.7.68.251:7064/stream'],
-    howl: null
-  },
-  {
-    title: "American Tamil Radio",
-    src: ['http://69.46.24.226:7188/stream'],
     howl: null
   }
 ]);
