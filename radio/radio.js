@@ -5,7 +5,8 @@ var elts = ['station0', 'icon0', 'title0', 'live0', 'playing0',
             'station3', 'icon3', 'title3', 'live3', 'playing3', 
             'station4', 'icon4', 'title4', 'live4', 'playing4',
             'station5', 'icon5', 'title5', 'live5', 'playing5',
-            'station6', 'icon6', 'title6', 'live6', 'playing6'];
+            'station6', 'icon6', 'title6', 'live6', 'playing6',
+            'station7', 'icon7', 'title7', 'live7', 'playing7'];
 elts.forEach(function(elt) {
   window[elt] = document.getElementById(elt);
 });
@@ -123,6 +124,11 @@ var radio = new Radio([
   {
     title: "BBC Radio 6",
     src: ['http://bbcmedia.ic.llnwd.net/stream/bbcmedia_6music_mf_p'],
+    howl: null
+  },
+  {
+    title: "Indie88",
+    src: ['https://cob-ais.leanstream.co/CINDFM?args=web_01'],
     howl: null
   },
   {
